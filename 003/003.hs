@@ -14,7 +14,3 @@ factor x
     | can_be_factored x = low_factor : factor (quot x low_factor)
     | otherwise = [x]
     where low_factor = (find_lowest_factor x)
-
-
-main = do
-    putStrLn $ show $ factor 600851475143
