@@ -1,3 +1,4 @@
+module Three where
 
 ifind_lowest_factor _ last_factor 0 = last_factor
 ifind_lowest_factor x factor remainder
@@ -13,3 +14,7 @@ factor x
     | can_be_factored x = low_factor : factor (quot x low_factor)
     | otherwise = [x]
     where low_factor = (find_lowest_factor x)
+
+
+main = do
+    putStrLn $ show $ factor 600851475143
