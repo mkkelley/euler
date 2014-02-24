@@ -1,3 +1,3 @@
 import Three
 
-test x = x
+needed_factors = [1..20]
